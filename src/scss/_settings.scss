@@ -137,8 +137,8 @@ a {
   flex-shrink: 0;
   padding: 0 35px;
   border-radius: 4px;
-  background-color: var(--FD9745, #FD9745);
-  color: var(--FFFFFF, #FFF);
+  background-color: var(--FD9745, #fd9745);
+  color: var(--FFFFFF, #fff);
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -157,8 +157,8 @@ a {
   flex-shrink: 0;
   padding: 0 64px;
   border-radius: 4px;
-  background-color: var(--FFFFFF, #FFF);
-  color: var(--02785E, #02785E);
+  background-color: var(--FFFFFF, #fff);
+  color: var(--02785E, #02785e);
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -181,11 +181,65 @@ a {
   }
 
   &__link {
-    color: var(--FFFFFF, #FFF);
+    color: var(--FFFFFF, #fff);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-transform: uppercase;
   }
+}
+
+.breadcrumbs {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 24px;
+
+  a,
+  span {
+    color: var(--FFFFFF, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+}
+
+.h1 {
+  color: var(--111111, #111);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.h2 {
+  color: var(--111111, #111);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  span {
+    color: var(--02785E, #02785e);
+  }
+}
+
+.h3 {
+  color: var(--111111, #111);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
