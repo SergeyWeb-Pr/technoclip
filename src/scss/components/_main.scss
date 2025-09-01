@@ -4,6 +4,7 @@
   background-size: cover;
   padding-bottom: 64px;
   position: relative;
+  overflow: hidden;
 
   &-backgr-image {
     position: absolute;
@@ -189,6 +190,7 @@
   }
 
   &__body {
+    width: 62%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -222,13 +224,13 @@
 
     &:nth-child(2) {
       left: auto;
-      right: -102px;
+      right: 42px;
       bottom: -6px;
     }
 
     &:nth-child(3) {
       left: auto;
-      right: -184px;
+      right: -36px;
       bottom: -4px;
     }
   }
