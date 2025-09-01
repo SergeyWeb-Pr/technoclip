@@ -84,7 +84,7 @@
                   </div>
                 </div>
                 <div class="block__contact block__contact--btn"><a class="btn btn-orange text-uppercase mr-1 mb-1"
-                    href="#" data-toggle="modal" data-target="#feedModal">Связаться с нами</a>
+                    href="#" data-toggle="modal" data-target="#feedModal" data-graph-path="form-request">Связаться с нами</a>
                 </div>
               </div><!-- end module nav__cataloge -->
             </div>
@@ -121,8 +121,8 @@
 </footer>
 
 <div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-video">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+  <div class="graph-modal__container modal-style modal-video-style" role="dialog" aria-modal="true" data-graph-target="modal-video">
+    <button class="btn-reset js-modal-close graph-modal__close modal-style__close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content">
       <iframe id="fancybox-frame1756579608638" name="fancybox-frame1756579608638" class="fancybox-iframe"
         frameborder="0" vspace="0" hspace="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""
@@ -132,20 +132,76 @@
     </div>
   </div>
 
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form-request">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-    <div class="graph-modal__content"></div>
+  <div class="graph-modal__container modal-style" role="dialog" aria-modal="true" data-graph-target="form-request">
+    <button class="btn-reset js-modal-close graph-modal__close modal-style__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <form action="#" class="form">
+        <div class="form-title form__title">Оставить заявку</div>
+        <label class="form__label">
+          <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="text" name="Телефон" class="input-reset form__input" placeholder="Телефон">
+        </label>
+        <label class="form__label">
+          <input type="text" name="Почта" class="input-reset form__input" placeholder="Почта">
+        </label>
+        <button class="btn-reset btn-form form__btn">Отправить запрос</button>
+        <div class="form__descr">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных
+            данных</a> </div>
+      </form>
+    </div>
   </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form-product">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-    <div class="graph-modal__content"></div>
+  <div class="graph-modal__container modal-style modal-style-product" role="dialog" aria-modal="true" data-graph-target="form-product">
+    <button class="btn-reset js-modal-close graph-modal__close modal-style__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="modal-style__inner">
+        <div class="modal-style__product-name js-modal-name"></div>
+        <div class="modal-style__product-image js-modal-image">
+          <img loading="lazy" src="" class="image" width="" height="" alt="">
+        </div>
+        <div class="content-text modal-style__product-content js-modal-content"></div>
+      </div>
+      <div class="modal-style__form">
+        <form action="#" class="form">
+          <div class="form-title form__title">Заявка на консультацию</div>
+          <label class="form__label">
+            <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="text" name="Телефон" class="input-reset form__input" placeholder="Телефон">
+          </label>
+          <label class="form__label">
+            <input type="text" name="Почта" class="input-reset form__input" placeholder="Почта">
+          </label>
+          <button class="btn-reset btn-form form__btn">Отправить запрос</button>
+          <div class="form__descr">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных
+              данных</a> </div>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form-test-drive">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-    <div class="graph-modal__content"></div>
-  </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form-consultation">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-    <div class="graph-modal__content"></div>
+  <div class="graph-modal__container modal-style" role="dialog" aria-modal="true" data-graph-target="form-test-drive">
+    <button class="btn-reset js-modal-close graph-modal__close modal-style__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <form action="#" class="form">
+        <div class="form-title form__title">Оставить заявку на тест-драйв</div>
+        <label class="form__label">
+          <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="text" name="Телефон" class="input-reset form__input" placeholder="Телефон">
+        </label>
+        <label class="form__label">
+          <input type="text" name="Почта" class="input-reset form__input" placeholder="Почта">
+        </label>
+        <button class="btn-reset btn-form form__btn">Отправить запрос</button>
+        <div class="form__descr">Нажимая «Отправить запрос», Вы даете согласие на <a href="/">обработку персональных
+            данных</a> </div>
+      </form>
+    </div>
   </div>
 </div>

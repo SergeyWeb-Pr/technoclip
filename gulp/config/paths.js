@@ -16,4 +16,6 @@ export const paths = {
   buildJsFolder: `${buildFolder}/js`,
   srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
+  libsFolder: `${srcFolder}/libs`,
+  buildLibsFolder: `${buildFolder}/libs`,
 };

@@ -59,7 +59,7 @@
         <p>Хотите убедиться лично? </p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-request">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">
@@ -105,7 +105,7 @@
           <div class="features__record-button"></div>
         </div>
         <div class="features__bottom">
-          <div class="features__button btn-reset btn-light">Оставьте заявку</div>
+          <div class="features__button btn-reset btn-light" data-graph-path="form-test-drive">Оставьте заявку</div>
           <div class="features__call">
             <span>или звоните</span>
             <div class="features__tel icon-info">
@@ -126,22 +126,26 @@
       <div class="swiper swiper-style block-video__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="block-video__image" data-graph-path="modal-video">
+            <div class="block-video__image" data-graph-path="modal-video"
+              data-video-src="https://rutube.ru/play/embed/04d05af3841b3a7e276838e562f73876/?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
               <img loading="lazy" src="img/videos-preview/video-preview1.jpg" class="image" width="" height="" alt="">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="block-video__image" data-graph-path="modal-video">
+            <div class="block-video__image" data-graph-path="modal-video"
+              data-video-src="https://rutube.ru/play/embed/887d6088250f4e468a71f46aaf08dd9f/?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
               <img loading="lazy" src="img/videos-preview/video-preview2.jpg" class="image" width="" height="" alt="">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="block-video__image" data-graph-path="modal-video">
+            <div class="block-video__image" data-graph-path="modal-video"
+              data-video-src="https://rutube.ru/play/embed/04d05af3841b3a7e276838e562f73876/?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
               <img loading="lazy" src="img/videos-preview/video-preview3.jpg" class="image" width="" height="" alt="">
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="block-video__image" data-graph-path="modal-video">
+            <div class="block-video__image" data-graph-path="modal-video"
+              data-video-src="https://rutube.ru/play/embed/04d05af3841b3a7e276838e562f73876/?autoplay=1&amp;autohide=1&amp;fs=1&amp;rel=0&amp;hd=1&amp;wmode=transparent&amp;enablejsapi=1&amp;html5=1">
               <img loading="lazy" src="img/videos-preview/video-preview1.jpg" class="image" width="" height="" alt="">
             </div>
           </div>
@@ -316,7 +320,7 @@
         <p>Запишитесь на тест-драйв прямо сейчас!</p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-test-drive">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">
@@ -412,7 +416,7 @@
         <p>Оптимизируйте производство без переплат! Закажите у нас — сэкономьте без потери качества.</p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-request">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">
@@ -429,113 +433,160 @@
   <div class="container">
     <h2 class="block-catalog__title h2">Каталог расходных материалов </h2>
     <div class="block-catalog__items">
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog1.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Клипсы П-образные</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Клипсы П-образные
+          </div>
           <div class="block-catalog__item-text">
             Изготавливаются с различными типами насечек, двух видов твердости материала. Ножки клипс дополнительно
             обработаны специальным составом, который предохраняет матрицу при ударе и защищает оболочку от
             травмирования. Широкий ассортимент позволяет клипсовать оболочки различного диаметра.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <div class="block-catalog__item-text-hide js-block-catalog-text-hide">
+            <ul>
+              <li><strong>100% совместимость</strong>&nbsp;с&nbsp;любыми моделями (автоматическими, полуавтоматическими,
+                ручными)</li>
+              <li><strong>Полный ассортимент:</strong> от&nbsp;пневматики до&nbsp;электроники
+                и&nbsp;быстроизнашивающихся деталей</li>
+              <li><strong>Мгновенная поставка</strong>&nbsp;— минимизируем время простоя вашего оборудования
+              </li>
+              <li><strong>Выгодные цены</strong>&nbsp;без наценок посредников</li>
+            </ul>
+          </div>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog2.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Клипсы непрерывные</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Клипсы непрерывные
+          </div>
           <div class="block-catalog__item-text">
             Непрерывные клипсы предназначены для автоматических клипсаторов. Они поставляются на пластиковых кассетах
             или в бескассетном варианте с дополнительными адаптерами. Разнообразие размеров обеспечивает возможность
             работать с оболочкой от 20 до 120мм.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <div class="block-catalog__item-text-hide js-block-catalog-text-hide">
+            <ul>
+              <li><strong>100% 222 совместимость</strong>&nbsp;с&nbsp;любыми моделями (автоматическими,
+                полуавтоматическими,
+                ручными)</li>
+              <li><strong>Полный ассортимент:</strong> от&nbsp;пневматики до&nbsp;электроники
+                и&nbsp;быстроизнашивающихся деталей</li>
+              <li><strong>Мгновенная поставка</strong>&nbsp;— минимизируем время простоя вашего оборудования
+              </li>
+              <li><strong>Выгодные цены</strong>&nbsp;без наценок посредников</li>
+            </ul>
+          </div>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog3.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Петли колбасные штучные</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Петли колбасные
+            штучные</div>
           <div class="block-catalog__item-text">
             Петли штучные предназначены для подвешивания колбасных и деликатесных изделия и дальнейшей обработке в
             термокамере. Используются в ручных и полуавтоматических клипсаторах. Петли изготавливаются из шпагата, с
             определённым видом кручения, которая позволяет хорошо держать форму петли.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog4.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Петли колбасные на ленте</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Петли колбасные на
+            ленте</div>
           <div class="block-catalog__item-text">
             Петли изготавливаются из шпагата с определенным видом кручения, которое позволяет хорошо держать форму
             петли. Они не перекручиваются у основания, сформированный узел имеет свойство затягиваться при увеличении
             веса продукции.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog5.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Алюминиевая проволока</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Алюминиевая
+            проволока</div>
           <div class="block-catalog__item-text">
             На мясоперерабатывающих предприятиях алюминиевая проволока имеет два вида применения: непосредственное
             использование проволоки как фиксирующего элемента в виде клипсы в проволочных клипсаторах или применение ее
             в виде материала при изготовлении П-образных и непрерывных клипс.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog6.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Пленка целлюлозная</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Пленка целлюлозная
+          </div>
           <div class="block-catalog__item-text">
             Пленка целлюлозная поставляется в виде ролей, бобин, полос с высоким диапазоном плотности и размеров.
             Подходит при производстве мясных, куриных изделий, подвергающихся термообработке и копчению.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog7.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Формовочная сетка деликатесная</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Формовочная сетка
+            деликатесная</div>
           <div class="block-catalog__item-text">
             Сетка для колбас используется для придания привлекательного внешнего вида продукта и выделение его на полке.
             Мы предлагаем самые разнообразные деликатесные сетки по форме, цвету и размеру.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
-      <div class="block-catalog__item">
-        <div class="block-catalog__item-image">
+      <div class="block-catalog__item js-block-catalog-item">
+        <div class="block-catalog__item-image js-block-catalog-btn" data-graph-path="form-product">
           <img loading="lazy" src="img/catalog/catalog8.png" class="image" width="" height="" alt="">
         </div>
         <div class="block-catalog__item-content">
-          <div class="block-catalog__item-name">Хлопковый шпагат для колбасы</div>
+          <div class="block-catalog__item-name js-block-catalog-btn" data-graph-path="form-product">Хлопковый шпагат для
+            колбасы</div>
           <div class="block-catalog__item-text">
             Хлопковый шпагат используется для производства колбасных изделий и деликатесов. Для обвязки колбас разных
             размеров и других продуктов.
           </div>
-          <button class="btn-reset btn-catalog block-catalog__item-button">Узнать подробнее</button>
+          <button class="btn-reset btn-catalog block-catalog__item-button js-block-catalog-btn"
+            data-graph-path="form-product">Узнать
+            подробнее</button>
         </div>
       </div>
     </div>
@@ -682,7 +733,7 @@
         <p><strong>Не переплачивайте посредникам</strong> – работайте с производителем!</p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-request">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">
@@ -816,7 +867,7 @@
         <p>Не теряйте время на простои! Закажите запчасти прямо сейчас</p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-request">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">
@@ -1028,7 +1079,7 @@
         <p>Не теряйте время на простои! Закажите запчасти прямо сейчас</p>
       </div>
       <div class="hero__bottom">
-        <div class="hero__button btn-reset btn-light">Оставьте заявку</div>
+        <div class="hero__button btn-reset btn-light" data-graph-path="form-request">Оставьте заявку</div>
         <div class="hero__call">
           <span>или звоните</span>
           <div class="hero__tel icon-info">

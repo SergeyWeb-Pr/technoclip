@@ -336,6 +336,7 @@
 
   &__image {
     width: 100%;
+    cursor: pointer;
     position: relative;
 
     &::before {
@@ -722,6 +723,7 @@
       justify-content: center;
       height: 258px;
       flex-shrink: 0;
+      cursor: pointer;
 
       img {
         height: 100%;
@@ -744,6 +746,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 130%;
+      cursor: pointer;
       margin-bottom: 8px;
     }
 
@@ -761,9 +764,14 @@
       margin-bottom: 16px;
     }
 
+    &-text-hide {
+      display: none;
+    }
+
     &-button {
       width: 100%;
       margin-top: auto;
+      cursor: pointer;
     }
   }
 }

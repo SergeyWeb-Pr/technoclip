@@ -9,6 +9,7 @@ import { stylesBackend } from './gulp/tasks/styles-backend.js';
 import { scripts } from './gulp/tasks/scripts.js';
 import { scriptsBackend } from './gulp/tasks/scripts-backend.js';
 import { resources } from './gulp/tasks/resources.js';
+import { libs } from './gulp/tasks/libs.js';
 import { images } from './gulp/tasks/images.js';
 import { webpImages } from './gulp/tasks/webp.js';
 import { htmlInclude } from './gulp/tasks/html-include.js';
@@ -37,14 +38,15 @@ const watcher = () => {
   gulp.watch(`${app.paths.srcPartialsFolder}/**/*.html`, htmlInclude);
   gulp.watch(`${app.paths.base.src}/*.html`, htmlInclude);
   gulp.watch(`${app.paths.resourcesFolder}/**`, resources);
+  gulp.watch(`${app.paths.libsFolder}/**`, libs);
   gulp.watch(`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
   gulp.watch(`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
   gulp.watch(app.paths.srcSvg, svgSprites);
 }
 
-const dev = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watcher);
-const backend = gulp.series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites);
-const build = gulp.series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, htmlMinify);
+const dev = gulp.series(clean, htmlInclude, scripts, styles, resources, libs, images, webpImages, svgSprites, watcher);
+const backend = gulp.series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, libs, images, webpImages, svgSprites);
+const build = gulp.series(clean, htmlInclude, scripts, styles, resources, libs, images, webpImages, svgSprites, htmlMinify);
 const cache = gulp.series(cacheTask, rewrite);
 const zip = zipFiles;
 
