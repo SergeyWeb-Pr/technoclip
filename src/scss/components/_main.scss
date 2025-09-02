@@ -249,6 +249,10 @@
       height: 595px;
       flex: inherit;
     }
+
+    @media screen and (max-width: 576px) {
+      padding-top: 40px;
+    }
   }
 
   &__container {
