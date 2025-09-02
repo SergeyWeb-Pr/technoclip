@@ -238,6 +238,11 @@ a {
   justify-content: flex-start;
   column-gap: 24px;
 
+  @media screen and (max-width: 576px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   a,
   span {
     color: var(--FFFFFF, #fff);
@@ -261,6 +266,10 @@ a {
   font-weight: 400;
   line-height: 120%;
   text-transform: uppercase;
+
+  @media screen and (max-width: 576px) {
+    font-size: 30px;
+  }
 }
 
 .h2 {
@@ -484,7 +493,7 @@ a {
 
   .modal-style__form {
     padding: 40px;
-    background: rgba(193, 217, 139, 0.20);
+    background: rgba(193, 217, 139, 0.2);
   }
 
   .modal-style__product-name {
@@ -518,5 +527,113 @@ a {
     width: 100%;
     height: 488px;
     flex-shrink: 0;
+  }
+}
+
+.swiper-style {
+  &__wrapper {
+    position: relative;
+
+    .swiper-pagination {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      bottom: -24px;
+
+      &-bullet {
+        border-radius: 665px;
+        background-color: rgba(129, 129, 129, 0.5);
+        width: 48px;
+        height: 4px;
+        margin: 0 !important;
+
+        &-active {
+          background-color: #c1d98b;
+        }
+      }
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+      background-image: url(../img/icons/play.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .swiper-button-next {
+      background-image: url(../img/icons/arrow-next.png);
+      left: auto;
+      right: -90px;
+    }
+
+    .swiper-button-prev {
+      background-image: url(../img/icons/arrow-prev.png);
+      left: -90px;
+    }
+  }
+}
+
+.swiper-style2 {
+  position: relative;
+  @media screen and (max-width: 576px) {
+    & > .swiper-wrapper {
+      display: flex !important;
+      gap: 0 !important;
+    }
+  }
+
+  .swiper-pagination {
+    display: none;
+
+    &-bullet {
+      border-radius: 50%;
+      background-color: #fff;
+      width: 6px;
+      height: 6px;
+      opacity: 0.5;
+      margin: 0 !important;
+
+      &-active {
+        background-color: #168a39;
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 1px solid #168a39;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 32px;
+      bottom: -20px;
+    }
   }
 }
