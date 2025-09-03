@@ -1828,11 +1828,6 @@ html,body {
         margin-right: -10px
     }
 
-    body .container, body [class*=col], html .container, html [class*=col] {
-        padding-left: 10px;
-        padding-right: 10px
-    }
-
     body .vc_column-inner, html .vc_column-inner {
         padding-right: 0;
         padding-left: 0
@@ -2104,11 +2099,6 @@ body {
 h3 {
     margin-top: 0;
     margin-bottom: .5rem
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 25px
 }
 
 ul {
@@ -2837,11 +2827,6 @@ html,body {
     body .row, html .row {
         margin-left: -10px;
         margin-right: -10px
-    }
-
-    body .container, body [class*=col], html .container, html [class*=col] {
-        padding-left: 10px;
-        padding-right: 10px
     }
 
     html, body {

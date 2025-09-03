@@ -207,6 +207,11 @@ a {
   text-transform: uppercase;
   cursor: pointer;
   width: fit-content;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    height: 58px;
+  }
 }
 
 .nav {
@@ -238,7 +243,7 @@ a {
   justify-content: flex-start;
   column-gap: 24px;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -267,7 +272,7 @@ a {
   line-height: 120%;
   text-transform: uppercase;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     font-size: 30px;
   }
 }
@@ -283,6 +288,10 @@ a {
   span {
     color: var(--02785E, #02785e);
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .h3 {
@@ -291,6 +300,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .h4 {
@@ -397,6 +410,11 @@ a {
 
     &.columns-2 {
       grid-template-columns: repeat(2, 1fr);
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+      }
     }
   }
 }
@@ -404,6 +422,11 @@ a {
 .form {
   &__title {
     margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
   }
 
   &__label {
@@ -458,6 +481,11 @@ a {
     font-weight: 400;
     line-height: 120%;
     margin-top: 24px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 16px;
+    }
+
     a {
       color: var(--02785E, #02785e);
     }
@@ -468,6 +496,11 @@ a {
   padding: 40px 60px;
   border-radius: 8px;
   width: 600px;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 24px;
+    width: 95%;
+  }
 
   &__close {
     background-image: url(../img/icons/modal-close.svg);
@@ -482,18 +515,34 @@ a {
   padding: 0;
   width: 940px;
 
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
+
   .graph-modal__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .modal-style__inner {
     padding: 40px;
+
+    @media screen and (max-width: 768px) {
+      padding: 24px;
+    }
   }
 
   .modal-style__form {
     padding: 40px;
     background: rgba(193, 217, 139, 0.2);
+
+    @media screen and (max-width: 768px) {
+      padding: 24px;
+    }
   }
 
   .modal-style__product-name {
@@ -504,6 +553,10 @@ a {
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   .modal-style__product-image {
@@ -512,6 +565,10 @@ a {
     flex-shrink: 0;
     margin: 0 auto;
     margin-bottom: 8px;
+
+    @media screen and (max-width: 768px) {
+      height: 198px;
+    }
 
     img {
       width: 100%;
@@ -522,11 +579,28 @@ a {
 
 .modal-video-style {
   width: 960px;
+  padding: 40px;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+    padding: 24px;
+  }
 
   .graph-modal__content {
     width: 100%;
     height: 488px;
     flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+      height: 200px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -587,7 +661,8 @@ a {
 
 .swiper-style2 {
   position: relative;
-  @media screen and (max-width: 576px) {
+
+  @media screen and (max-width: 768px) {
     & > .swiper-wrapper {
       display: flex !important;
       gap: 0 !important;
@@ -611,6 +686,7 @@ a {
         height: 12px;
         flex-shrink: 0;
         position: relative;
+        opacity: 1;
 
         &::before {
           content: "";
@@ -626,7 +702,7 @@ a {
       }
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 768px) {
       position: absolute;
       bottom: 0;
       display: flex;
@@ -634,6 +710,19 @@ a {
       justify-content: center;
       column-gap: 32px;
       bottom: -20px;
+    }
+  }
+
+  &.light {
+    .swiper-pagination {
+      bottom: -25px;
+      &-bullet {
+        background-color: var(--c-1-d-98-b, #c1d98b);
+
+        &-active {
+          background-color: var(--168-a-39, #168a39);
+        }
+      }
     }
   }
 }
