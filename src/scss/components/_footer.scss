@@ -2652,6 +2652,14 @@ footer p a,footer li a,footer .footer__bottom a {
     background: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../images/line-green.png") 0 100% repeat-x
 }
 
+.footer__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 footer p a:hover,footer li a:hover,footer .footer__bottom a:hover {
     background: none
 }
