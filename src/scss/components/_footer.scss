@@ -86,30 +86,6 @@ button:-moz-focusring,[type="button"]:-moz-focusring,[type="submit"]:-moz-focusr
     font: inherit
 }
 
-@font-face {
-    font-family: "futurapt";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.eot");
-    src: url("../fonts/futurapt.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.ttf") format("truetype"),url("../fonts/futurapt.svg#futurapt") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
-@font-face {
-    font-family: "futura-medium";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.eot");
-    src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.ttf") format("truetype"),url("../fonts/futura-medium.svg#futura-medium") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
-@font-face {
-    font-family: "futurapt-bold";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.eot");
-    src: url("../fonts/futurapt-bold.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.ttf") format("truetype"),url("../fonts/futurapt-bold.svg#futurapt-bold") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
 .icon-close::before {
     content: '';
     display: inline-block;
@@ -181,37 +157,6 @@ button:-moz-focusring,[type="button"]:-moz-focusring,[type="submit"]:-moz-focusr
     height: 5px
 }
 
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
-}
-
 *,*::before,*::after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -237,7 +182,6 @@ header,nav {
 
 body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -1108,7 +1052,6 @@ body {
     background-color: #fff;
     color: #000;
     overflow-x: hidden;
-    font-family: "futurapt";
     font-weight: 300;
     font-size: 20px;
     -webkit-font-smoothing: antialiased
@@ -1206,8 +1149,11 @@ i {
 
 .module__lang .dropdown-toggle::after {
     border: none;
-    background-image: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../images/sprites.png");
+    // background-image: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../images/sprites.png");
+    background-image: url(../img/icons/arrow-down.svg);
     background-position: -262px -313px;
+    background-position: center;
+    background-size: cover;
     width: 9px;
     height: 5px;
     display: inline-block;
@@ -1998,30 +1944,6 @@ button:-moz-focusring {
     font: inherit
 }
 
-@font-face {
-    font-family: "futurapt";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.eot");
-    src: url("../fonts/futurapt.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.ttf") format("truetype"),url("../fonts/futurapt.svg#futurapt") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
-@font-face {
-    font-family: "futura-medium";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.eot");
-    src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.ttf") format("truetype"),url("../fonts/futura-medium.svg#futura-medium") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
-@font-face {
-    font-family: "futurapt-bold";
-    src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.eot");
-    src: url("../fonts/futurapt-bold.eot?#iefix") format("embedded-opentype"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.woff") format("woff"),url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.ttf") format("truetype"),url("../fonts/futurapt-bold.svg#futurapt-bold") format("svg");
-    font-style: normal;
-    font-weight: normal
-}
-
 .icon-phone::before {
     content: '';
     display: inline-block;
@@ -2029,37 +1951,6 @@ button:-moz-focusring {
     background-position: -212px -313px;
     width: 12px;
     height: 12px
-}
-
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
 }
 
 *,*::before,*::after {
@@ -2087,7 +1978,6 @@ footer {
 
 body {
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;

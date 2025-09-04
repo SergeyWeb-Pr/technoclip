@@ -46,7 +46,7 @@
 
   &__inner {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: 840px;
     padding-top: 24px;
 
@@ -254,7 +254,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      height: 500px;
+      height: 320px;
       padding-top: 40px;
     }
   }
@@ -423,7 +423,7 @@
   &__record {
     &-name {
       color: var(--FFFFFF, #fff);
-      font-size: 28px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: 120%;
@@ -527,7 +527,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      height: 162px;
+      height: 192px;
     }
 
     img {
@@ -658,6 +658,10 @@
       @media screen and (max-width: 992px) {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+
+    .swiper-slide {
+      height: auto;
     }
   }
 
@@ -792,6 +796,10 @@
         }
       }
     }
+
+    .swiper-slide {
+      height: auto;
+    }
   }
 
   &__item {
@@ -802,6 +810,7 @@
     border-radius: 8px;
     border: 1px solid var(--c-1-d-98-b, #c1d98b);
     padding: 16px;
+    height: 100%;
 
     &-icon {
       width: 24px;
@@ -922,11 +931,20 @@
     right: 362px;
     z-index: 1;
   }
+  
+  .content-text ul li::before {
+    background-image: url(../img/icons/icon.svg);
+  }
 
   .why-us {
     margin-bottom: 24px;
 
+    @media screen and (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+
     &__title {
+      font-size: 28px;
       color: #fff;
     }
 
@@ -984,6 +1002,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    height: 100%;
 
     &-image {
       width: 100%;

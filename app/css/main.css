@@ -485,7 +485,7 @@ a {
   height: 24px;
   aspect-ratio: 1/1;
   overflow: hidden;
-  background-image: url(../img/icons/icon.svg);
+  background-image: url(../img/icons/icon-check-green.png);
 }
 .content-text ul li:not(:last-child) {
   margin-bottom: 8px;
@@ -510,11 +510,13 @@ a {
 }
 
 .form__title {
+  white-space: nowrap;
   margin-bottom: 24px;
 }
 @media screen and (max-width: 768px) {
   .form__title {
     font-size: 24px;
+    white-space: inherit;
     margin-bottom: 16px;
   }
 }
@@ -844,6 +846,16 @@ a {
   background-color: var(--168-a-39, #168a39);
 }
 
+.open-all span {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .header-info {
+    display: none;
+  }
+}
+
 /* style.css: (https://technoclip.ru/wp-content/themes/technoclip/assets/css/style.css) */
 html, body, div, span, h3, a, img, i, ul, li, form, header, nav {
   margin: 0;
@@ -931,27 +943,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=submit]:-moz-focusrin
   font: inherit;
 }
 
-@font-face {
-  font-family: "futurapt";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.eot");
-  src: url("../fonts/futurapt.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.ttf") format("truetype"), url("../fonts/futurapt.svg#futurapt") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "futura-medium";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.eot");
-  src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.ttf") format("truetype"), url("../fonts/futura-medium.svg#futura-medium") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "futurapt-bold";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.eot");
-  src: url("../fonts/futurapt-bold.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.ttf") format("truetype"), url("../fonts/futurapt-bold.svg#futurapt-bold") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
 .icon-close::before {
   content: "";
   display: inline-block;
@@ -1023,37 +1014,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=submit]:-moz-focusrin
   height: 5px;
 }
 
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace ;
-}
-
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1077,7 +1037,6 @@ header, nav {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -1840,7 +1799,6 @@ body {
   background-color: #fff;
   color: #000;
   overflow-x: hidden;
-  font-family: "futurapt";
   font-weight: 300;
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
@@ -1930,8 +1888,10 @@ i {
 
 .module__lang .dropdown-toggle::after {
   border: none;
-  background-image: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../images/sprites.png");
+  background-image: url(../img/icons/arrow-down.svg);
   background-position: -262px -313px;
+  background-position: center;
+  background-size: cover;
   width: 9px;
   height: 5px;
   display: inline-block;
@@ -2674,27 +2634,6 @@ button:-moz-focusring {
   font: inherit;
 }
 
-@font-face {
-  font-family: "futurapt";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.eot");
-  src: url("../fonts/futurapt.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt.ttf") format("truetype"), url("../fonts/futurapt.svg#futurapt") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "futura-medium";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.eot");
-  src: url("../fonts/futura-medium.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futura-medium.ttf") format("truetype"), url("../fonts/futura-medium.svg#futura-medium") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "futurapt-bold";
-  src: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.eot");
-  src: url("../fonts/futurapt-bold.eot?#iefix") format("embedded-opentype"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.woff") format("woff"), url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../fonts/futurapt-bold.ttf") format("truetype"), url("../fonts/futurapt-bold.svg#futurapt-bold") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
 .icon-phone::before {
   content: "";
   display: inline-block;
@@ -2702,37 +2641,6 @@ button:-moz-focusring {
   background-position: -212px -313px;
   width: 12px;
   height: 12px;
-}
-
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace ;
 }
 
 *, *::before, *::after {
@@ -2758,7 +2666,6 @@ footer {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -3487,7 +3394,7 @@ input.error:placeholder, textarea.error:placeholder {
 }
 .hero__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 840px;
   padding-top: 24px;
 }
@@ -3740,7 +3647,7 @@ input.error:placeholder, textarea.error:placeholder {
 }
 @media screen and (max-width: 768px) {
   .features__content {
-    height: 500px;
+    height: 320px;
     padding-top: 40px;
   }
 }
@@ -3923,7 +3830,7 @@ input.error:placeholder, textarea.error:placeholder {
 }
 .features__record-name {
   color: var(--FFFFFF, #fff);
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -4058,7 +3965,7 @@ input.error:placeholder, textarea.error:placeholder {
 }
 @media screen and (max-width: 768px) {
   .block-video__image {
-    height: 162px;
+    height: 192px;
   }
 }
 .block-video__image img {
@@ -4208,6 +4115,9 @@ input.error:placeholder, textarea.error:placeholder {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.choose-us__items .swiper-slide {
+  height: auto;
+}
 .choose-us__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4356,6 +4266,9 @@ input.error:placeholder, textarea.error:placeholder {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.why-us__items .swiper-slide {
+  height: auto;
+}
 .why-us__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4368,6 +4281,7 @@ input.error:placeholder, textarea.error:placeholder {
   border-radius: 8px;
   border: 1px solid var(--c-1-d-98-b, #c1d98b);
   padding: 16px;
+  height: 100%;
 }
 .why-us__item-icon {
   width: 24px;
@@ -4483,10 +4397,19 @@ input.error:placeholder, textarea.error:placeholder {
   right: 362px;
   z-index: 1;
 }
+.hero-tempate .content-text ul li::before {
+  background-image: url(../img/icons/icon.svg);
+}
 .hero-tempate .why-us {
   margin-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .hero-tempate .why-us {
+    margin-bottom: 40px;
+  }
+}
 .hero-tempate .why-us__title {
+  font-size: 28px;
   color: #fff;
 }
 .hero-tempate .why-us__item {
@@ -4552,6 +4475,7 @@ input.error:placeholder, textarea.error:placeholder {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  height: 100%;
 }
 .block-catalog__item-image {
   width: 100%;
