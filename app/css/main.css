@@ -1991,6 +1991,9 @@ header .module__contacts .row-phone {
 }
 
 header .module__contacts .row-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   line-height: 18px;
   margin-bottom: 16px;
 }
@@ -3248,6 +3251,21 @@ footer .footer__top {
 
 footer p a, footer li a, footer .footer__bottom a {
   background: url("https://technoclip.ru/wp-content/themes/technoclip/assets/css/../images/line-green.png") 0 100% repeat-x;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 footer p a:hover, footer li a:hover, footer .footer__bottom a:hover {
